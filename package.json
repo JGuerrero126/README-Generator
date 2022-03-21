@@ -1,0 +1,23 @@
+{
+  "name": "readme-generator",
+  "version": "1.0.0",
+  "description": "This is a node based app that allows the user auto generate a professional looking README.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JGuerrero126/README-Generator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JGuerrero126/README-Generator/issues"
+  },
+  "homepage": "https://github.com/JGuerrero126/README-Generator#readme",
+  "dependencies": {
+    "inquirer": "^8.2.1"
+  }
+}

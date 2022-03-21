@@ -1,2 +1,29 @@
-# README-Generator
-This is a node based app that allows the user auto generate a professional looking README.
+# blach
+
+  ## Description
+  
+  alsdjfaksdfasdf
+  
+  ## Installation
+  
+  fasdfasdf
+  
+  ## Usage
+  
+  asfdasfd
+  
+  ## License
+  
+  asdfasdf
+  
+  ## Contributing
+  
+  grhrwgw
+  
+  ## Tests
+  
+  wdfcwergse
+  
+  ## Questions
+  
+  sdfasdfasew
