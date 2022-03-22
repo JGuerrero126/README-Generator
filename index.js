@@ -1,36 +1,46 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 
-const generateREADME = ({ title, description, install, usage, license, contributing, tests, questions }) =>
-  `# ${title}
+const generateREADME = ({ title, description, install, usage, license, contributing, tests, email, username }) =>
+`# ${title} ![license](https://img.shields.io/badge/license-${license}-green)
 
-  ## Description
+## Description
   
-  ${description}
+${description}
+
+## Table of Contents
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [Questions](#questions)
   
-  ## Installation
+## Installation
   
-  ${install}
+${install}
   
-  ## Usage
+## Usage
   
-  ${usage}
+${usage}
   
-  ## License
+## Contributing
   
-  ${license}
+${contributing}
   
-  ## Contributing
+## Tests
   
-  ${contributing}
+${tests}
   
-  ## Tests
+## Questions
+
+For any questions you can reach me at:
+ Email:${email}
+ GitHub: https://github.com/${username}
   
-  ${tests}
+## License
   
-  ## Questions
-  
-  ${questions}`;
+This project is protected under the ${license} license and all relevant protections are granted.`;
 
 inquirer
   .prompt([
@@ -57,7 +67,7 @@ inquirer
     {
       type: 'list',
       name: 'license',
-      choices: ['','','','',''],
+      choices: ['MIT','Apache','GPL'],
       message: 'What license does this project fall under?',
     },
     {
@@ -72,8 +82,13 @@ inquirer
     },
     {
      type: 'input',
-     name: 'questions',
-     message: 'How can people reach you for questions?',
+     name: 'email',
+     message: 'What Email can people use to reach you for questions?',
+    },
+    {
+     type: 'input',
+     name: 'username',
+     message: 'What is your GitHub username?',
     },
 
   ])
