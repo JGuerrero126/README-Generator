@@ -39,7 +39,7 @@ ${tests}
 
 For any questions you can reach me at:
 
- Email:${email}
+ Email: ${email}
 
  GitHub: https://github.com/${username}
   
