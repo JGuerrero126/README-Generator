@@ -3,42 +3,48 @@ const fs = require('fs');
 
 const generateREADME = ({ title, description, install, usage, license, contributing, tests, email, username }) =>
 `# ${title} ![license](https://img.shields.io/badge/license-${license}-green)
-
-## Description
   
 ${description}
 
 ## Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)
-* [License](#license)
 * [Contributing](#contributing)
 * [Tests](#tests)
 * [Questions](#questions)
+* [License](#license)
   
 ## Installation
+*****
   
 ${install}
   
 ## Usage
+*****
   
 ${usage}
   
 ## Contributing
+*****
   
 ${contributing}
   
 ## Tests
+*****
   
 ${tests}
   
 ## Questions
+*****
 
 For any questions you can reach me at:
+
  Email:${email}
+
  GitHub: https://github.com/${username}
   
 ## License
+*****
   
 This project is protected under the ${license} license and all relevant protections are granted.`;
 
